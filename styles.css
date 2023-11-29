@@ -279,7 +279,24 @@ nav ul li a:hover::after {
 
 .work:hover .layer {
     height: 100%;
+}
 
+.btn {
+    display: block;
+    border: 2px solid #ff004f;
+    width: fit-content;
+    margin: 50px auto;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 20px;
+    transition: background 0.5s, border 0.5s;
+}
+
+.btn:hover {
+    background: #ff004f;
+    border: 2px solid antiquewhite;
 }
 
 
