@@ -292,12 +292,95 @@ nav ul li a:hover::after {
     color: antiquewhite;
     font-size: 20px;
     transition: background 0.5s, border 0.5s;
+    background: #262626;
 }
 
 .btn:hover {
     background: #ff004f;
     border: 2px solid antiquewhite;
+    color: black;
+    font-weight: bold;
 }
+
+/*-------------------contact-----------------*/
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+.social-icons {
+    margin-top: 30px;  
+}
+
+.social-icons a {
+    font-size: 30px;
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-block;
+    color: #ff004f;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: antiquewhite;
+    transform: translateY(-5px);
+}
+
+.btn.btn2 {
+    display: inline-block;
+    background: #262626; 
+}
+
+.btn.btn2:hover {
+    background: #ff004f;
+}
+
+.contact-right form {
+    width:100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 2px solid antiquewhite;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: antiquewhite;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+form input:hover, form textarea:hover {
+    border: 2px solid #ff004f;
+}
+
+
+form .btn2 {
+    padding: 10px 60px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
 
 
 
