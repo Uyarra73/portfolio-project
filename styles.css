@@ -376,8 +376,69 @@ form .btn2 {
     cursor: pointer;
 }
 
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    margin-top: 20px;
+    font-weight: 300;
+}
 
+.copyright i {
+    color: #ff004f;
+    font-size: 30px;
+    padding-right: 15px;
+}
 
+/*--------------------css for small screens-------------------------*/
+
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #header {
+        background-image: url(images/phone-background.png);
+    }
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1 {
+        font-size: 30px;
+    }
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+        color: #262626;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    nav ul {
+        background: #ff004f;
+        position:fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index:2;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+        
+    }
+    nav ul li a{
+        color: #262626;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+}
 
 
 
