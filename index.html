@@ -143,7 +143,7 @@
                 <a href="images/CV ALBERTO ROSELL.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Enter your name here" required>
                     <input type="email" name="Email" placeholder="Enter your email here" required>
                     <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
@@ -159,6 +159,17 @@
 
 
 
- <script src="effects.js"></script>   
+ <script src="effects.js"></script>  
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyjqx4COyGYp2Vm9iAqm-dT_AlZY9cjGWAyqevBgLLF3YtnoPa8vvfPBWdI0XCdmtRb/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+     e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+ </script> 
 </body>
 </html>
