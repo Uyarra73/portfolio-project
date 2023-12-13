@@ -161,15 +161,15 @@
 
  <script src="effects.js"></script>  
  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyjqx4COyGYp2Vm9iAqm-dT_AlZY9cjGWAyqevBgLLF3YtnoPa8vvfPBWdI0XCdmtRb/exec'
-    const form = document.forms['submit-to-google-sheet']
-
+    const scriptURL = "https://script.google.com/macros/s/AKfycbz8DrVAJqQ1zncNnrOXtsn0JLnxO5iGVkfvJcrz_8gv8EXiGGktjOhcBIJcMKZiZvGB/exec"
+    const form = document.forms["submit-to-google-sheet"]
+  
     form.addEventListener('submit', e => {
-     e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
- </script> 
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
