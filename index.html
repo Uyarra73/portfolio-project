@@ -143,11 +143,11 @@
                 <a href="images/CV ALBERTO ROSELL.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Enter your name here" required>
-                    <input type="email" name="Email" placeholder="Enter your email here" required>
-                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                <form id="myForm"  name="submit-to-google-sheet">
+                    <input type="text" name="Name" id="input-text" placeholder="Enter your name here" required>
+                    <input type="email" name="Email" id="input-email" placeholder="Enter your email here" required>
+                    <textarea name="Message"  rows="6" id="input-message" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2" id="submit-btn">Submit</button>
 
                 </form>
 
@@ -169,6 +169,7 @@
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => console.log('Success!', response))
         .catch(error => console.error('Error!', error.message))
+        form.reset()
     })
   </script>
 </body>
