@@ -37,6 +37,8 @@ logo {
     width: 140px;
 }
 
+
+
 nav ul li {
     list-style: none;
     display:inline-block;
@@ -49,6 +51,7 @@ nav ul li a {
     color: beige;
     font-size: 2rem;
     position: relative;
+    align-items: end;
 }
 
 nav ul li a::after {
@@ -137,9 +140,9 @@ nav ul li a:hover::after {
     transition: 0.5s; 
 }
 
-.tab-links.active-link::after {
+/*.tab-links.active-link::after {
     width: 50%;
-}
+}*/
 
 .tab-contents ul li {
     list-style: none;
@@ -478,6 +481,12 @@ nav .fa-solid {
         font-size: 14px;
     }
 
+}
+
+#msg {
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }
 
 
